@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Burner Pages</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0%25' stop-color='%23E8643A'/%3E%3Cstop offset='60%25' stop-color='%23F2A07B'/%3E%3Cstop offset='100%25' stop-color='%23F5C67A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M16 2C14 6 11 8 10 10c-1.5 3-1 5.5 0 7.5a4 4 0 0 1-1.5-3C7 17 6 20 8 23c1.5 2.3 4 4 8 5 4-1 6.5-2.7 8-5 2-3 1-6-.5-8.5a4 4 0 0 1-1.5 3c1-2 1.5-4.5 0-7.5C20.5 8 18 6 16 2z' fill='url(%23g)'/%3E%3C/svg%3E" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0%25' stop-color='%23B5543A'/%3E%3Cstop offset='60%25' stop-color='%23D08068'/%3E%3Cstop offset='100%25' stop-color='%23F5C67A'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M16 2C14 6 11 8 10 10c-1.5 3-1 5.5 0 7.5a4 4 0 0 1-1.5-3C7 17 6 20 8 23c1.5 2.3 4 4 8 5 4-1 6.5-2.7 8-5 2-3 1-6-.5-8.5a4 4 0 0 1-1.5 3c1-2 1.5-4.5 0-7.5C20.5 8 18 6 16 2z' fill='url(%23g)'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -15,19 +15,23 @@
 
 :root {
   /* Color — Brand */
-  --color-ember:        #E8643A;
-  --color-ember-soft:   #F2A07B;
-  --color-ember-glow:   rgba(232, 100, 58, 0.08);
-  --color-ember-ring:   rgba(232, 100, 58, 0.15);
-  --color-ember-shadow: rgba(232, 100, 58, 0.3);
+  --color-ember:        #B5543A;
+  --color-ember-soft:   #D08068;
+  --color-ember-glow:   rgba(181, 84, 58, 0.07);
+  --color-ember-ring:   rgba(181, 84, 58, 0.12);
+  --color-ember-shadow: rgba(181, 84, 58, 0.25);
+
+  /* Color — Accent */
+  --color-sage:         #7B8F6E;
+  --color-sage-soft:    rgba(123, 143, 110, 0.10);
 
   /* Color — Neutrals */
-  --color-bg:           #FAF7F2;
-  --color-surface:      #FFFFFF;
-  --color-cream:        #F0EBE1;
-  --color-char:         #2C2A26;
-  --color-ash:          #9C9689;
-  --color-smoke:        #D4CFC6;
+  --color-bg:           #F3EDE2;
+  --color-surface:      #FDFBF7;
+  --color-cream:        #E6DFD1;
+  --color-char:         #1E1C18;
+  --color-ash:          #8A847A;
+  --color-smoke:        #CDC7BA;
   --color-error:        #C43D3D;
   --color-error-soft:   rgba(196, 61, 61, 0.08);
 
@@ -412,7 +416,7 @@ select.input {
   font-weight: var(--font-label);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--color-ash);
+  color: var(--color-sage);
   margin-bottom: var(--space-3);
   text-align: center;
 }
@@ -424,7 +428,7 @@ select.input {
   margin-bottom: var(--space-3);
 }
 
-.value-prop__icon { flex-shrink: 0; margin-top: 0.05rem; }
+.value-prop__icon { flex-shrink: 0; margin-top: 0.05rem; color: var(--color-sage); }
 .value-prop__icon svg { width: 1.1em; height: 1.1em; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; fill: none; }
 
 .value-prop__text {
@@ -539,7 +543,7 @@ select.input {
   font-weight: var(--font-label);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--color-ember);
+  color: var(--color-sage);
   margin-bottom: var(--space-2);
   display: flex;
   align-items: center;
@@ -547,8 +551,8 @@ select.input {
 }
 
 .pinned-card {
-  background: var(--color-ember-glow);
-  border: var(--border-pin);
+  background: var(--color-sage-soft);
+  border: 1.5px solid rgba(123, 143, 110, 0.2);
   border-radius: var(--radius-lg);
   padding: var(--space-3) var(--space-3);
   margin-bottom: var(--space-2);
