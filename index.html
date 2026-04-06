@@ -1023,12 +1023,12 @@ select.input {
 <div class="screen screen--center active" id="screen-create">
   <div class="card card--md">
     <div class="logo text-center">burner<span>pages</span></div>
-    <h1 class="headline">Start a burner.</h1>
-    <p class="subline">A throwaway wall for any occasion. It lives, it burns, it's gone.</p>
+    <h1 class="headline text-center">Kill the group chat.</h1>
+    <p class="subline text-center">One shared wall for your whole event. Talk, photos, videos from everyone, in one place. No app, no signup, no notifications blowing up your phone. When it's over, it's gone.</p>
 
     <div class="field">
-      <label class="label" for="c-title">What's this for?</label>
-      <input class="input" type="text" id="c-title" placeholder="Jake's Bachelor Weekend" />
+      <label class="label" for="c-title">Event or trip name</label>
+      <input class="input" type="text" id="c-title" placeholder="e.g. Cabo trip, Mom's 60th, Block party..." />
     </div>
 
     <div class="field-row">
@@ -1049,12 +1049,12 @@ select.input {
 
     <div class="field">
       <label class="label" for="c-location">Where?</label>
-      <input class="input" type="text" id="c-location" placeholder="Austin, TX" />
+      <input class="input" type="text" id="c-location" placeholder="Lake Tahoe, CA" />
     </div>
 
     <div class="field">
-      <label class="label" for="c-desc">One-liner</label>
-      <textarea class="input" id="c-desc" placeholder="Dinner at 7, don't be late."></textarea>
+      <label class="label" for="c-desc">What should people know?</label>
+      <textarea class="input" id="c-desc" placeholder="The thing everyone needs to see first."></textarea>
     </div>
 
     <div class="field">
@@ -1070,20 +1070,20 @@ select.input {
       </div>
 
       <div class="toggle-panel" id="panel-question">
-        <input class="input" type="text" id="c-question" placeholder="What's Jake's dog's name?" />
-        <input class="input mt-2" type="text" id="c-answer" placeholder="Answer: Biscuit" />
+        <input class="input" type="text" id="c-question" placeholder="What's the name of the lake?" />
+        <input class="input mt-2" type="text" id="c-answer" placeholder="Answer: Mirror Lake" />
         <p class="helper">Only people who know the answer get in. Case-insensitive.</p>
       </div>
     </div>
 
     <div class="field">
       <label class="label" for="c-pin">Moderator PIN</label>
-      <input class="input" type="text" id="c-pin" placeholder="4 digits — just for you" maxlength="4" inputmode="numeric" />
+      <input class="input" type="text" id="c-pin" placeholder="4 digits, just for you" maxlength="4" inputmode="numeric" />
       <p class="helper">You're the fire keeper. Lets you remove any post.</p>
     </div>
 
     <button class="btn btn--primary btn--fire" id="btn-create" onclick="handleCreate()">Light it up</button>
-    <div class="price-tag"><strong>$5</strong> — no account, no trace</div>
+    <div class="price-tag">Free. No account, no trace.</div>
 
     <div class="text-center" style="margin-top: var(--space-10); padding-top: var(--space-6); border-top: 1px solid var(--color-cream);">
       <p class="label" style="margin-bottom: var(--space-2);">Prototype</p>
@@ -1123,22 +1123,22 @@ select.input {
     <p class="helper mt-3" id="gate-hint">Check the text from whoever sent you the link.</p>
 
     <div class="value-props">
-      <p class="value-props__label">Here's the deal</p>
-      <div class="value-prop">
-        <span class="value-prop__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
-        <span class="value-prop__text"><strong>This page is temporary.</strong> It burns after the event. No archive, no history.</span>
-      </div>
+      <p class="value-props__label">Not another group chat</p>
       <div class="value-prop">
         <span class="value-prop__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg></span>
-        <span class="value-prop__text"><strong>No login, no account.</strong> Pick a name and you're in. That's it.</span>
+        <span class="value-prop__text"><strong>No app. No account. No signup.</strong> Pick a name and you're on the wall.</span>
       </div>
       <div class="value-prop">
         <span class="value-prop__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.7 3A6 6 0 0 1 18 8a21.3 21.3 0 0 0 .6 5"/><path d="M17 17H3s3-2 3-9a4.67 4.67 0 0 1 .3-1.7"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/><path d="m2 2 20 20"/></svg></span>
-        <span class="value-prop__text"><strong>No notifications.</strong> Check in when you want. Nobody's blowing up your phone.</span>
+        <span class="value-prop__text"><strong>Zero notifications.</strong> No buzzing, no badges, no one blowing up your phone.</span>
       </div>
       <div class="value-prop">
         <span class="value-prop__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></span>
-        <span class="value-prop__text"><strong>Photos stay here.</strong> No downloads, no cloud. You had to be there.</span>
+        <span class="value-prop__text"><strong>Everything in one place.</strong> Talk, photos, videos, pinned details. One wall, not 47 texts.</span>
+      </div>
+      <div class="value-prop">
+        <span class="value-prop__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+        <span class="value-prop__text"><strong>Then it's gone.</strong> The event ends, the page burns. No archive, no downloads, no trail.</span>
       </div>
     </div>
   </div>
@@ -1329,7 +1329,7 @@ select.input {
 
   // ========== GATE ==========
   window.demoGate = function() {
-    const title = document.getElementById('c-title').value.trim() || 'Jake\'s Bachelor Weekend';
+    const title = document.getElementById('c-title').value.trim() || 'Cabin Weekend';
     const code = document.getElementById('c-code').value.trim() || '1234';
     const question = document.getElementById('c-question').value.trim();
     const answer = document.getElementById('c-answer').value.trim() || '';
@@ -1641,22 +1641,22 @@ select.input {
 
   // ========== SEED ==========
   function seed() {
-    addPerson('Jake', true);
-    ['Mike','Sarah','Tommy','Jess','Dave'].forEach(n => addPerson(n, false));
+    addPerson('Mel', true);
+    ['Nico','Priya','Tomás','Jess','Ray'].forEach(n => addPerson(n, false));
 
     const demo = [
-      { a:'Jake', b:'Hotel: The Ace, 300 E 4th St. Room block under Murphy. Door code: 4421', m:120, pin:true },
-      { a:'Jake', b:'Dinner: Parlor, 8pm Saturday. Back room reserved. Don\'t be late.', m:119, pin:true },
-      { a:'Mike', b:'Flight lands at 4:15. Someone better be at the airport with a cold one.', m:45, r:[
-        {a:'Dave',b:'I got you. Silver truck, curbside.',m:40},
-        {a:'Tommy',b:'Bring me one too',m:38}
+      { a:'Mel', b:'Cabin: 412 Ridgeline Rd. Lockbox code 7734. Park behind the house.', m:120, pin:true },
+      { a:'Mel', b:'Dinner is Saturday 7pm at the house. Bring a dish or don\'t eat.', m:119, pin:true },
+      { a:'Nico', b:'Flight lands at 3:45. Anyone nearby for a pickup or should I grab a rental?', m:45, r:[
+        {a:'Tomás',b:'I\'ll swing by. Blue Subaru, arrivals curb.',m:40},
+        {a:'Priya',b:'Room for one more? My flight gets in at 4:10',m:38}
       ]},
-      { a:'Sarah', b:'Reservation confirmed for 8pm. They said back room if we\'re over 10.', m:30, r:[
-        {a:'Jess',b:'Tell them we\'re definitely over 10',m:27}
+      { a:'Priya', b:'I\'m bringing the inflatable projector screen. Movie night is happening.', m:30, r:[
+        {a:'Jess',b:'YES. I have a speaker we can hook up',m:27}
       ]},
-      { a:'Tommy', b:'Bringing the speaker. Don\'t let me forget it at the hotel like last time.', m:22 },
-      { a:'Jess', b:'Who\'s sharing an Uber from downtown? I\'m at the Ace.', m:12 },
-      { a:'Dave', b:'Just landed. This weekend is going to be legendary.', m:3 },
+      { a:'Tomás', b:'Bringing firewood and the good coffee. Don\'t let me leave it in the car like last time.', m:22 },
+      { a:'Jess', b:'Who needs anything from the store? Making a run before I head up.', m:12 },
+      { a:'Ray', b:'Just crossed the bridge. This weekend is going to be so good.', m:3 },
     ];
 
     demo.forEach(d => {
